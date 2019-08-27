@@ -2,9 +2,10 @@ function funcao(){
     //Cria o vetor:
     var vet = []
     //Cria o objeto
-    var objeto = {}
+
     //Cria os produtos
     for(var i = 0; i<5; i++){
+        var objeto = {}
         objeto.codigo = Number(prompt("Informe o código: "));
         objeto.nome = prompt("Informe o nome: ");
         objeto.qntd = Number(prompt("Informe a quantidade: "));
