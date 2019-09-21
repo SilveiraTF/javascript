@@ -1,8 +1,8 @@
 function exe4(resposta){
-    r = prompt("Informe o raio da esfera!")
-    exe4_1(raio)
+    raio = Number(prompt("Informe o raio da esfera:"))
+    var resultado = exe4_4(raio)
+    alert(resultado)
 }
-function exe41(raio){
-    var resposta = (4/3)*r*r*r;
-    alert("volume :" + resposta)
+function exe4_4(raio){
+    return (4*Math.PI*Math.pow(raio,3))/3;
 }

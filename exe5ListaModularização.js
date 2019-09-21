@@ -1,12 +1,8 @@
 function exe5() {
     var n1 = prompt("Informe um valor")
-    exe5_1(n1)
+    var resultado = exe5_5(n1)
+    alert(resultado)
 }
-function exe5_1(n1) {
-    if (n1 > 0) {
-        alert("Valor positivo")
-    }
-    else {
-        alert("Valor negativo")
-    }
+function exe5_5(n1) {
+    return (n1 >= 0) ? "positivo" : "negativo"
 }

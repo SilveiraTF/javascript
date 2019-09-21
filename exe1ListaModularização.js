@@ -1,11 +1,16 @@
-function exe1(soma){
-    var num1 = prompt("Digite um numero");
-    ex1_1(num1,soma);
+function exe1(){
+    //leitura de dados
+    var num1 = Number(prompt("Digite um numero: "));
+    //chama a função e atribui o retorno a uma variável resultado
+    var resultado = exe1_1(num1);
+    //mostra o resultado
+    alert(resultado)
     }
-function ex11(num1){
+function exe1_1(num1){
     var soma = 0;
-    for(var i=0;i<num1;i++){
+    //soma dos numeros de 1 a num1
+    for(var i=0;i<=num1;i++){
         var soma = soma + i
     }
-    alert(soma)
+    return soma
 } 
