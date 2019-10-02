@@ -7,5 +7,5 @@ function pares(vetor){
     }
     return qtd;
 }
-let v = [1,2,3,4,5,6,7,8,9,10]
+let vetor = [1,2,3,4,5,6,7,8,9,10]
 console.log(`A quantidade de pares é ${pares(v)}.`)
