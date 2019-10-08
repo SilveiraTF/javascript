@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script> 
+            var linhas = Number(prompt("qnt linhas: "))
+            var colunas = Number(prompt("qnt colunas: "))
+            var mat = []
+            var vet = []
+            var media = 0
+            for (var i = 0; i<linhas;i++){
+                vet.push(prompt("Informe nome: "))
+                mat[i] = []
+                for (var j =0; j<colunas;j++){
+                    mat[i][j]= Number(prompt("Informe a nota: " +j));
+                    media += mat[i][j]
+                }
+            }
+            var soma
+            for (var i=0;i<linhas;i++){//para cada aluno
+                soma = 0 // para cada nota
+                for(var j=0;j<colunas;j++){
+                    soma += mat[i][j]
+                }
+                if (soma / colunas >= 6){
+                    alert(`Aluno ${vet[i]} foi aprovado com ${soma/colunas}`)
+                }
+                else if (soma / colunas >= 3){
+                    alert(`Aluno ${vet[i]} em exame com ${soma/colunas}`)
+                }
+                else {
+                    alert(`Aluno ${vet[i]} foi reprovado com ${soma/colunas.toFixed(2)}`)
+                }
+            }
+            alert(mediia/ linhas*colunas)
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

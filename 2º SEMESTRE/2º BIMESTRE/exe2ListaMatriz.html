@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script> 
+            var matriz = []
+            var num = 0;
+            var conta = 0;
+            var soma = 0;
+            var media = 0;
+            for(var i=0; i<2; i++){
+                matriz[i] = []
+                for(var j=0; j<4; j++){
+                    num = Number(prompt("Informe os valores desejados: "))
+                    if((num > 12) && (num < 20)){
+                        conta++;
+                    }
+                    if(matriz[i][j] % 2 == 0){
+                        soma = soma + matriz[i][j]
+                        media = soma/matriz[i][j]
+                }
+              }
+            }
+            alert(`A quantidade de elementos entre 15 e 20 é: ${conta}`)
+            alert(`A média dos elementos pares é: ${media}`)
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

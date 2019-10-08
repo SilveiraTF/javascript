@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <script>
+        // Montar a matriz
+        var mes = ["JANEIRO", "FEVEREIRO", "MARÇO", "ABRIL", "MAIO", "JUNHO", "JULHO", "AGOSTO", "SETEMBRO", "OUTUBRO", "NOVEMBRO", "DEZEMBRO"]
+        var mat = []
+        for(var i = 0; i<12;i++){
+            mat[i] = []
+            for(var j = 0; j<4;j++){
+                mat[i][j] = Number(prompt("Informe um valor: "))
+            }
+        }
+        //calcula total vendido por mes
+        for(var i =0; i<12; j++){
+            var totalMes = 0
+            for (var j = 0; j<4;j++){
+                totalMes += mat[i][j];
+            }
+            alert(`Total vendido em ${mes[i]} é ${totalMes}`)
+        }
+        //calcula total vendido por semana
+        totalAno = 0
+        for (var j = 0; j<4;j++){
+            var totalSemana = 0
+            for(var i = 0; i<12;i++){
+                totalSemana += mat[i][j];
+                totalAno += mat[i][j]
+            }
+        }
+            alert(`Total vendido no ano é ${totalAno}`)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

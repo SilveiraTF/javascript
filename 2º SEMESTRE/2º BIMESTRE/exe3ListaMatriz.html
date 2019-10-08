@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script> 
+            var matriz = []
+            var num = 0;
+            var conta = 0;
+            var maiorNum = 0;
+            var menorNum = 0;
+            var posiMenor = 0;
+            var posiMaior = 0;
+            for(var i=1; i<6; i++){
+                matriz[i] = []
+                for(var j=1; j<3; j++){
+                    num = Number(prompt(`Informe o valor da ${i}º linha e da ${j}º coluna`))
+                }
+            }
+            for(i=1; i<matriz[i][j]; i++){
+                if(matriz[i][j] > maiorNum){
+                    maiorNum = matriz[i][j]
+                    posiMaior = [i][j]
+                }
+                if(matriz[i][j] < menorNum){
+                    menorNum = matriz[i][j]
+                    posiMenor = [i][j]
+                }
+            }
+            alert(`O maior elemento é: ${maiorNum} e está na posição ${posiMaior} `)
+            alert(`O menor elemento é: ${menorNum} e está na posição ${posiMenor}`)
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

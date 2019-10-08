@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <script>
+        // Montar a matriz
+        var auxdo1 = 0
+        var soma = 0
+        var linhas = Number(prompt("Digite a quantidade de linhas: "));
+        var colunas = Number(prompt("Digite a quantidade de colunas: "));
+        var matriz = []
+        for (var i = 0; i < linhas; i++) {
+            matriz[i] = []
+            for (var j = 0; j < colunas; j++) {
+                matriz[i][j] = Number(prompt("Informe o valor: "))
+
+                if (matriz[i][j] == 1) {
+                    auxdo1++
+                }
+                if (matriz[i][j] % 2 == 0)
+                soma = soma + matriz[i][j]
+            }
+        }
+        alert(auxdo1)
+        alert(soma)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

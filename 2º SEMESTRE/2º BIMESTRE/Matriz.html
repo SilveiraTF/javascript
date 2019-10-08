@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <script>
+        // Montar a matriz
+        var LE = [ //loteria esportiva
+            [1,0,0],
+            [0,1,0],
+            [0,0,1],
+            [1,1,0],
+            [1,0,1],
+            [0,1,1],
+            [1,1,1]
+        ]
+        var aux = ""
+        for(var i = 0; i<7; i++){
+            aux = aux + "\n"
+            for(var j =0; j<3;  j++){
+                aux = aux + " " + LE[i][j]
+            }
+        }
+        alert(aux)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
